@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Chamados em Aberto";
+}
+
+<div class="text-right">
+    
+    <p>CHAMADOS EM ABERTO</p>
+</div>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">TITULO</th>
+            <th scope="col">DESCRIÇÃO</th>
+            <th scope="col">STATUS</th>
+            <th scope="col">AÇÃO</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Computador não liga</td>
+            <td>Apos inumeras tentativas de ligar, ele apresetou este defeito, asvez liga outras vezes nao, nao é rotineiro</td>
+            <td>CRIADO</td>
+            <td>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <a role="button" class="btn btn-danger" asp asp-controller="Chamado" asp-action="ExcluirChmd"> Excluir </a>
+                    <a role ="button" class="btn btn-warning" asp-controller="Chamado" asp-action="EditChmd"> Editar </a>
+              </div>
+            </td>
+        </tr>
+     
+    </tbody>
+</table>
