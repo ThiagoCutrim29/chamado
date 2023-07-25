@@ -3517,11 +3517,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Chamados\\Chamados\\Chamados.csproj",
+      "projectUniqueName": "C:\\Users\\pc\\Desktop\\Chamados\\Chamados\\Chamados.csproj",
       "projectName": "Chamados",
-      "projectPath": "D:\\Chamados\\Chamados\\Chamados.csproj",
+      "projectPath": "C:\\Users\\pc\\Desktop\\Chamados\\Chamados\\Chamados.csproj",
       "packagesPath": "C:\\Users\\pc\\.nuget\\packages\\",
-      "outputPath": "D:\\Chamados\\Chamados\\obj\\",
+      "outputPath": "C:\\Users\\pc\\Desktop\\Chamados\\Chamados\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
