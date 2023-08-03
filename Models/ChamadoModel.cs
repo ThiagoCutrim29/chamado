@@ -1,5 +1,6 @@
 ﻿namespace Chamados.Models
 {
+
     public class ChamadoModel
     {
         public int id { get; set; } 

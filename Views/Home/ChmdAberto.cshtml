@@ -1,4 +1,5 @@
-﻿@{
+﻿@model List<ChamadoModel>
+@{
     ViewData["Title"] = "Chamados em Aberto";
 }
 
@@ -17,17 +18,24 @@
         </tr>
     </thead>
     <tbody>
-        <tr>
-            <td>Computador não liga</td>
-            <td>Apos inumeras tentativas de ligar, ele apresetou este defeito, asvez liga outras vezes nao, nao é rotineiro</td>
-            <td>CRIADO</td>
-            <td>
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <a role="button" class="btn btn-danger" asp asp-controller="Chamado" asp-action="ExcluirChmd"> Excluir </a>
-                    <a role ="button" class="btn btn-warning" asp-controller="Chamado" asp-action="EditChmd"> Editar </a>
-              </div>
-            </td>
-        </tr>
-     
+       @if (Model !=null && Model.Any())
+        {
+            foreach (ChamadoModel chamado in Model )
+            {
+                <tr>
+                    <td>@chamado.titulo</td>
+                    <td>@chamado.descricao</td>
+                    <td>-</td>
+                    <td>
+                        <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                            <a role="button" class="btn btn-danger"  asp asp-controller="Chamado" asp-action="ExcluirChmd"> Excluir </a>
+                            <a role="button" class="btn btn-warning" asp-controller="Chamado" asp-action="EditChmd"> Editar </a>
+                        </div>
+                    </td>
+                </tr>
+            }
+
+        }
+
     </tbody>
 </table>
