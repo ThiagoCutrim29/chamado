@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Chamados.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20230725145733_CriandoTabelaChamados")]
-    partial class CriandoTabelaChamados
+    [Migration("20230804134146_CriandoTabela")]
+    partial class CriandoTabela
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,7 +37,6 @@ namespace Chamados.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("status")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("titulo")

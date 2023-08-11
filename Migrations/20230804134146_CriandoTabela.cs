@@ -5,7 +5,7 @@
 namespace Chamados.Migrations
 {
     /// <inheritdoc />
-    public partial class CriandoTabelaChamados : Migration
+    public partial class CriandoTabela : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -18,7 +18,7 @@ namespace Chamados.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     titulo = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     descricao = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    status = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    status = table.Column<string>(type: "nvarchar(max)", nullable: true)
                 },
                 constraints: table =>
                 {

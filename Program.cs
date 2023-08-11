@@ -16,7 +16,7 @@ namespace Chamados
 
             builder.Services.AddDbContext<Contexto>
              (options => options.UseSqlServer
-             ("Data Source=DESKTOP-9OM2BHU\\SQLEXPRESS;Initial Catalog=ChamadoMaster;Integrated Security=False;User ID=sa;Password=123; Connect Timeout = 15; Encrypt = False; TrustServerCertificate = False" ));
+             ("Data Source=DESKTOP-9OM2BHU\\SQLEXPRESS;Initial Catalog=Chamado;Integrated Security=False;User ID=sa;Password=123; Connect Timeout = 15; Encrypt = False; TrustServerCertificate = False" ));
              
             builder.Services.AddScoped<IChamadoRepositorio,ChamadoRepositorio >();
 
